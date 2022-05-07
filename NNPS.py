@@ -314,7 +314,7 @@ acc=[]
 mcc=[]
 for k in range(n_drugdrug_rel_types):
     print(k)
-    model.fit(train_org[k],train_label_org[k],batch_size=1024, epochs=5)
+    model.fit(train_org[k],train_label_org[k],batch_size=1024, epochs=50)
     model.evaluate(val_org[k], val_label_org[k])
     model.evaluate(test_org[k], test_label_org[k])
     roc=metrics.roc_auc_score(test_label_org[k],model.predict(test_org[k]))
@@ -346,7 +346,7 @@ loaded_model =load_model('model.h5')
 loaded_model.compile(loss='binary_crossentropy', optimizer=sgd, metrics=['accuracy'])
 for k in range(541):
     print(k)
-    model.fit(train_org[k],train_label_org[k],batch_size=1024, epochs=5)
+    model.fit(train_org[k],train_label_org[k],batch_size=1024, epochs=50)
     model.evaluate(val_org[k], val_label_org[k])
     model.evaluate(test_org[k], test_label_org[k])
     roc=metrics.roc_auc_score(test_label_org[k],model.predict(test_org[k]))
