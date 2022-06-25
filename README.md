@@ -14,6 +14,7 @@ The polypharmacy side effect datasets on Datasets folder is available and ready 
 Work on python 3 and recent versions of Keras, Tensorflow, sklearn, networkx, seaborn, pandas, numpy and scipy are required.
 ## Citation
 Please kindly cite the paper if you use the code or the datasets in this repo:
+```
 @article{Masumshah2021,
 author = {Masumshah, Raziyeh and Aghdam, Rosa and Eslahchi, Changiz},
 journal = {BMC Bioinformatics},
